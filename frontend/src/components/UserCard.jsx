@@ -2,7 +2,7 @@ import React from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
 import { Button } from './ui/button'
 import { useSelector } from 'react-redux'
-import useFollowHanlder from '@/utilities/useFollowHanlder'
+import useFollowHanlder from '../utilities/useFollowHanlder'
 
 const UserCard = ({ uf }) => {
     const { user } = useSelector(state => state.user);

@@ -1,8 +1,7 @@
 import React from 'react'
 import LeftSidebar from '../components/LeftSidebar'
 import { Outlet, useNavigate } from 'react-router-dom'
-import RightSidebar from '../components/RightSidebar'
-import BottomBar from '@/components/BottomBar'
+import BottomBar from '../components/BottomBar'
 import { useSelector } from 'react-redux'
 
 

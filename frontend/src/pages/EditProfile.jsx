@@ -5,7 +5,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { API_URL } from "../utilities/constant.js";
 import toast from 'react-hot-toast'
 import { setUser } from "../redux/user.slice.js";
-import { Button } from "@/components/ui/button.jsx";
+import { Button } from "../components/ui/button.jsx";
 import { RxCross2 } from "react-icons/rx";
 
 const EditProfile = () => {

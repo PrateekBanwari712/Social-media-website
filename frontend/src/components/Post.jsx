@@ -1,30 +1,22 @@
 import React, { useState } from "react";
 import { FiHeart, FiBookmark, FiMessageCircle, FiMoreHorizontal } from "react-icons/fi";
 import CommentDialog from "./CommentDialog";
-import axios from 'axios';
-import { API_URL } from '../utilities/constant.js'
-import { useDispatch, useSelector } from 'react-redux'
-import toast from 'react-hot-toast'
+import { useSelector } from 'react-redux'
 import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog";
-import { Ghost } from "lucide-react";
 import { Button } from "./ui/button";
-import { setPosts } from "../redux/post.slice";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import useGetUserProfile from "@/hooks/useGetUserProfile";
-import { useLikeHandler } from "@/utilities/useLikeHandler";
-import useCommentHandler from "@/utilities/useCommentHandler";
-import useBookmarkHandler from "@/utilities/useBookmarkHandler";
+import { useLikeHandler } from "../utilities/useLikeHandler";
+import useCommentHandler from "../utilities/useCommentHandler";
+import useBookmarkHandler from "../utilities/useBookmarkHandler";
 import { useNavigate } from "react-router-dom";
-import useFollowHanlder from "@/utilities/useFollowHanlder";
+import useFollowHanlder from "../utilities/useFollowHanlder";
 
 
 
 
 const Post = ({ post }) => {
-    const dispatch = useDispatch();
     const navigate = useNavigate()
     const { user } = useSelector(store => store.user);
-    const { posts } = useSelector(store => store.post)
     const [openComment, setOpenComment] = useState(false)
     const { liked, postLike, likeOrDislikeHandler } = useLikeHandler(post);
     const { text, setText, handleComment } = useCommentHandler(post);

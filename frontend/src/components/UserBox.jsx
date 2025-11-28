@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
-import { setSelectedUser } from '@/redux/user.slice';
+import { setSelectedUser } from '../redux/user.slice';
 
 const UserBox = ({ suggestedUser, selectedUser }) => {
     const dispatch = useDispatch();

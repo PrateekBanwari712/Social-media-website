@@ -1,13 +1,13 @@
-import useBookmarkHandler from '@/utilities/useBookmarkHandler';
-import { useLikeHandler } from '@/utilities/useLikeHandler';
+import useBookmarkHandler from '../utilities/useBookmarkHandler';
+import { useLikeHandler } from '../utilities/useLikeHandler';
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { Dialog, DialogContent, DialogHeader, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTrigger } from "../components/ui/dialog";
 import { MdDelete } from "react-icons/md";
 import { FiBookmark, FiHeart, FiMessageCircle } from "react-icons/fi";
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 import CommentDialog from './CommentDialog';
-import { setUserProfile } from '@/redux/user.slice';
+import { setUserProfile } from '../redux/user.slice';
 
 const PostCard = ({ post }) => {
     const { liked, postLike, likeOrDislikeHandler } = useLikeHandler(post);

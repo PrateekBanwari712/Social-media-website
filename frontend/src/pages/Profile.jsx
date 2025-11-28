@@ -3,13 +3,13 @@ import { useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import useGetUserProfile from "../hooks/useGetUserProfile";
 import { RxCross2 } from "react-icons/rx";
-import useLogoutHandler from "@/utilities/useLogoutHandler";
-import PostCard from "@/components/postCard";
+import useLogoutHandler from "..//utilities/useLogoutHandler";
+import PostCard from "../components/PostCard";
 import { FaPaintBrush } from "react-icons/fa";
 import { FiLogOut } from "react-icons/fi";
-import useFollowHanlder from "@/utilities/useFollowHanlder";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import UserCard from "@/components/userCard";
+import useFollowHanlder from "../utilities/useFollowHanlder.js";
+import { Dialog, DialogContent, DialogTrigger } from "../components/ui/dialog";
+import UserCard from "../components/UserCard";
 
 
 const Profile = () => {

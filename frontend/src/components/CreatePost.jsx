@@ -4,7 +4,7 @@ import toast from "react-hot-toast"
 import axios from "axios";
 import { API_URL } from "../utilities/constant.js";
 import { useDispatch, useSelector } from "react-redux";
-import { setPosts } from "@/redux/post.slice.js";
+import { setPosts } from "../redux/post.slice.js";
 
 const CreatePost = ({ open, setOpen }) => {
 	const dispatch = useDispatch();

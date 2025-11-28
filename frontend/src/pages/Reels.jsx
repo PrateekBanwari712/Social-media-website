@@ -4,11 +4,11 @@ import { FiHeart, FiMessageCircle, FiBookmark, FiMoreHorizontal } from "react-ic
 import { FaPlay } from "react-icons/fa";
 import { FaPause } from "react-icons/fa6";
 import CommentDialog from "../components/CommentDialog";
-import { Button } from "@/components/ui/button";
-import { useLikeHandler } from "@/utilities/useLikeHandler";
-import useCommentHandler from "@/utilities/useCommentHandler";
-import useBookmarkHandler from "@/utilities/useBookmarkHandler";
-import useFollowHandler from "@/utilities/useFollowHanlder.js";
+import { Button } from "../components/ui/button";
+import { useLikeHandler } from "../utilities/useLikeHandler";
+import useCommentHandler from "../utilities/useCommentHandler";
+import useBookmarkHandler from "../utilities/useBookmarkHandler";
+import useFollowHandler from "../utilities/useFollowHanlder.js";
 
 const Reels = () => {
   const { posts = [] } = useSelector((state) => state.post || {});

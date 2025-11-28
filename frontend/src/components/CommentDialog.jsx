@@ -3,14 +3,10 @@ import { FiMoreHorizontal } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import Comment from "./Comment";
-import axios from "axios";
-import { API_URL } from "@/utilities/constant";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Button } from "./ui/button";
-import { setPosts } from "@/redux/post.slice";
 import { IoMdClose } from "react-icons/io";
-import { toast } from "react-hot-toast";
-import useCommentHandler from "@/utilities/useCommentHandler.js";
+import useCommentHandler from "../utilities/useCommentHandler.js";
 
 
 

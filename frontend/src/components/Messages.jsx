@@ -2,12 +2,12 @@ import React, { useEffect, useRef, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 import useGetAllMessages from '@/hooks/useGetAllMessages';
-import useGetRTM from '@/hooks/useGetRTM';
+import useGetRTM from '../hooks/useGetRTM';
 import { Button } from './ui/button';
 import { FaBars } from 'react-icons/fa';
 import axios from 'axios';
-import { API_URL } from '@/utilities/constant';
-import { setMessages } from '@/redux/chat.slice';
+import { API_URL } from '../utilities/constant';
+import { setMessages } from '../redux/chat.slice';
 
 const Messages = ({ selectedUser, isSidebarOpen, setIsSidebarOpen }) => {
     useGetAllMessages();

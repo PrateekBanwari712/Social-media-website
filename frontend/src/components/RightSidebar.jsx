@@ -1,7 +1,7 @@
 import axios from "axios";
 import React from "react";
 import { useSelector } from "react-redux";
-import useFollowHanlder from "@/utilities/useFollowHanlder.js";
+import useFollowHanlder from "../utilities/useFollowHanlder.js";
 import { Button } from "./ui/button.jsx";
 import { useNavigate } from "react-router-dom";
 
