@@ -5,7 +5,7 @@ import Messages from "./Messages";
 import { FaAngleDoubleLeft } from "react-icons/fa";
 import { IoMdClose, IoMdSearch } from "react-icons/io";
 import { Button } from "./ui/button";
-import UserBox from "./userBox";
+import UserBox from "./UserBox";
 
 const ChatPage = () => {
 	useGetAllMessages();
