@@ -18,7 +18,7 @@ const Login = () => {
         try {
             setLoading(true);
 
-            const response = await axios.post(`${API_URL}/user/login`,
+            const response = await axios.post(`${API_URL}/usesr/login`,
                 { email, password },
                 { withCredentials: true })
 
@@ -32,7 +32,7 @@ const Login = () => {
 
         } catch (error) {
             console.log(error)
-            toast.error(error.response.data.message)
+            toast.error(error.message)
         } finally {
             setLoading(false);
         }
