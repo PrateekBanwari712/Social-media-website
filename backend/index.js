@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 8080;
 app.use(express.json());
 app.use(cookieparser());
 app.use(cors({
-    origin: ["http://localhost:5173", "http://localhost:3000"],
+    origin: ["https://social-media-website-1h55.onrender.com"],
     credentials: true
 }));
 
