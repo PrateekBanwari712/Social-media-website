@@ -1,1 +1,1 @@
-export const API_URL = "http://localhost:3000/api/v1"
+export const API_URL = "https://social-media-website-1h55.onrender.com/api/v1"

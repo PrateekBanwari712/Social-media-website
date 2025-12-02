@@ -19,9 +19,11 @@ const PORT = process.env.PORT || 8080;
 app.use(express.json());
 app.use(cookieparser());
 app.use(cors({
-    origin: ["http://localhost:5173", "http://localhost:3000"],
+    origin: ["http://localhost:5173",
+        "https://social-media-website-1h55.onrender.com"],
     credentials: true
 }));
+
 
 app.use("/api/v1/user", userRoutes)
 app.use("/api/v1/post", postRoutes)
@@ -30,6 +32,7 @@ app.use(express.static(path.join(_dirname, "/frontend/dist")));
 app.get(/.*/, (req, res) => {
     res.sendFile(path.resolve(_dirname, "frontend", "dist", "index.html"));
 });
+
 
 
 connectDB();
